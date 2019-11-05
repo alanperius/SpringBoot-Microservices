@@ -1,5 +1,6 @@
-package com.alan.microservices.limitsservice;
+package com.alan.microservices.limitsservice.controller;
 
+import com.alan.microservices.limitsservice.Configuration;
 import com.alan.microservices.limitsservice.bean.LimitConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

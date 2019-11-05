@@ -2,10 +2,10 @@ package com.alan.microservices.currencyexchangeservice.repository;
 
 import com.alan.microservices.currencyexchangeservice.entity.ExchangeValue;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
 
+@Repository
 public interface ExchangeValueRepository extends JpaRepository<ExchangeValue, Long> {
-
-    ExchangeValue findAllByFromAndTo(String from, String to);
+    ExchangeValue findByFromAndTo(String from, String to);
 }

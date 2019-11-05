@@ -13,7 +13,7 @@ public class ExchangeValueBO {
     private ExchangeValueRepository exchangeValueRepository;
 
     public ExchangeValue findByFromAndTo(String from, String to){
-        return exchangeValueRepository.findAllByFromAndTo(from, to);
+        return exchangeValueRepository.findByFromAndTo(from, to);
     }
 
 }
