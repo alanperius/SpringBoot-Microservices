@@ -2,9 +2,10 @@ package com.alan.microservices.currencyexchangeservice.BO;
 
 import com.alan.microservices.currencyexchangeservice.entity.ExchangeValue;
 import com.alan.microservices.currencyexchangeservice.repository.ExchangeValueRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class ExchangeValueBO {
@@ -12,7 +13,7 @@ public class ExchangeValueBO {
     @Autowired
     private ExchangeValueRepository exchangeValueRepository;
 
-    public ExchangeValue findByFromAndTo(String from, String to){
+    public Optional<ExchangeValue> findByFromAndTo(String from, String to){
         return exchangeValueRepository.findByFromAndTo(from, to);
     }
 
