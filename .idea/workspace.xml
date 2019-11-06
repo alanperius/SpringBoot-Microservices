@@ -2,28 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3cb7074-3f0a-4180-8e44-2f2f9f75df95" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/src/main/java/com/alan/microservices/netflixeurekanamingserver/NetflixEurekaNamingServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/netflix-eureka-naming-server/src/test/java/com/alan/microservices/netflixeurekanamingserver/NetflixEurekaNamingServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/exceptions/CurrencyExchangeNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/exceptions/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/exceptions/exception/CustomizedResponseEntityExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/exceptions/exception/ExceptionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/src/main/java/com/alan/microservices/netflixzuulapigatewayserver/NetflixZuulApiGatewayServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/src/main/java/com/alan/microservices/netflixzuulapigatewayserver/logging/ZuulLoggingFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-zuul-api-gateway-server/src/test/java/com/alan/microservices/netflixzuulapigatewayserver/NetflixZuulApiGatewayServerApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/CurrencyConversionServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/alan/microservices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/alan/microservices/currencyexchangeservice/CurrencyExchangeServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/limits-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/controller/CurrencyConversionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/controller/CurrencyConversionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/service/CurrencyExchangeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/service/CurrencyExchangeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/service/proxy/CurrencyExchangeServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/service/proxy/CurrencyExchangeServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/limits-service/src/main/java/com/alan/microservices/limitsservice/LimitsConfigurationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/src/main/java/com/alan/microservices/limitsservice/controller/LimitsConfigurationController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +133,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/currency-exchange-service/src/main/java/com/alan/microservices/currencyexchangeservice/exceptions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15527344" />
@@ -144,8 +148,9 @@
       <recent name="com.alan.microservices.currencyexchangeservice.exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projetos\Udemy\in28minutes\SpringBoot Microservices\currency-exchange-service\src\main\java\com\alan\microservices\currencyexchangeservice\exceptions" />
+      <recent name="C:\Projetos\Udemy\in28minutes\SpringBoot Microservices\currency-conversion-service\src\main\java\com\alan\microservices\currencyconversionservice" />
       <recent name="C:\Projetos\Udemy\in28minutes\git-localconfig-repo" />
+      <recent name="C:\Projetos\Udemy\in28minutes\SpringBoot Microservices\currency-exchange-service\src\main\java\com\alan\microservices\currencyexchangeservice\exceptions" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -232,6 +237,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NetflixZuulApiGatewayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="netflix-zuul-api-gateway-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.alan.microservices.netflixzuulapigatewayserver.NetflixZuulApiGatewayServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringCloudConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-cloud-config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.alan.microservices.springcloudconfigserver.SpringCloudConfigServerApplication" />
@@ -246,8 +258,9 @@
       <item itemvalue="Spring Boot.CurrencyExchangeServiceApplication8001" />
       <item itemvalue="Spring Boot.CurrencyExchangeServiceApplication8002" />
       <item itemvalue="Spring Boot.CurrencyConversionServiceApplication" />
-      <item itemvalue="Spring Boot.LimitsServiceApplication" />
       <item itemvalue="Spring Boot.NetflixEurekaNamingServerApplication" />
+      <item itemvalue="Spring Boot.LimitsServiceApplication" />
+      <item itemvalue="Spring Boot.NetflixZuulApiGatewayServerApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -264,17 +277,17 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@88e10415" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@245c40c1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@88e10415" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1c1b334d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@245c40c1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@357ada6c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@88e10415" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@4da6e7b3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@245c40c1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@724f4651" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -294,7 +307,8 @@
       <updated>1572912260269</updated>
       <workItem from="1572912261494" duration="14704000" />
       <workItem from="1572973681668" duration="533000" />
-      <workItem from="1572978082291" duration="15464000" />
+      <workItem from="1572978082291" duration="16000000" />
+      <workItem from="1573055851451" duration="6555000" />
     </task>
     <task id="LOCAL-00001" summary="Commit properties changes">
       <created>1572962882655</created>
@@ -338,11 +352,28 @@
       <option name="project" value="LOCAL" />
       <updated>1573048382664</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding Eureka to all teh projects.">
+      <created>1573055355574</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573055355574</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -365,14 +396,15 @@
     <MESSAGE value="testing" />
     <MESSAGE value="Adding Feign to Currency conversion." />
     <MESSAGE value="Adding Ribbon and created a exceptions class to show better the errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Ribbon and created a exceptions class to show better the errors." />
+    <MESSAGE value="Adding Eureka to all teh projects." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Eureka to all teh projects." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/controller/CurrencyConversionController.java</url>
-          <line>46</line>
+          <line>47</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -381,9 +413,19 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/currency-exchange-service/src/main/java/com/alan/microservices/currencyexchangeservice/controller/CurrencyExchangeController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/exceptions/exception/CustomizedResponseEntityExceptionHandler.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/currency-conversion-service/src/main/java/com/alan/microservices/currencyconversionservice/service/CurrencyExchangeService.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="4" />
+          <line>20</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

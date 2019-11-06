@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 @RestController
 public class CurrencyConversionController {
@@ -44,10 +45,10 @@ public class CurrencyConversionController {
                                                   @PathVariable("to") String to,
                                                   @PathVariable("quantity") BigDecimal quantity){
 
-        CurrencyConversionBean response = currencyExchangeService.retrieveExchangeValue(from, to);
+        Optional<CurrencyConversionBean> response = currencyExchangeService.retrieveExchangeValue(from, to);
 
-        return new CurrencyConversionBean(response.getId(), from, to, response.getConversionMultiple(),
-                quantity, quantity.multiply(response.getConversionMultiple()), response.getPort());
+        return new CurrencyConversionBean(response.get().getId(), from, to, response.get().getConversionMultiple(),
+                quantity, quantity.multiply(response.get().getConversionMultiple()), response.get().getPort());
     }
 
 }
