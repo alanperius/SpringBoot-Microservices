@@ -1,6 +1,6 @@
 package com.alan.microservices.springcloudconfigserver;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
