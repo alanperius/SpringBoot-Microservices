@@ -51,6 +51,20 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.1.3.RELEASE</version>
+        </dependency>
+
+        <!--        To remove this error, we must addd this dependency-->
+        <!--        javax.ws.rs.WebApplicationException: java.lang.BootstrapMethodError: java.lang.NoClassDefFoundError: vlsi/utils/CompactHashMap-->
+        <dependency>
+            <groupId>com.github.vlsi.compactmap</groupId>
+            <artifactId>compactmap</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
