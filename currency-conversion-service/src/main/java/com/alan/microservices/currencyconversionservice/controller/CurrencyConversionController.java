@@ -3,6 +3,7 @@ package com.alan.microservices.currencyconversionservice.controller;
 
 import com.alan.microservices.currencyconversionservice.bean.CurrencyConversionBean;
 import com.alan.microservices.currencyconversionservice.service.CurrencyExchangeService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,6 +17,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
+@Slf4j
 public class CurrencyConversionController {
 
     @Autowired
@@ -46,6 +48,8 @@ public class CurrencyConversionController {
                                                   @PathVariable("quantity") BigDecimal quantity){
 
         Optional<CurrencyConversionBean> response = currencyExchangeService.retrieveExchangeValue(from, to);
+
+        log.info("Response from convertCurrencyFeign() = {}", response);
 
         return new CurrencyConversionBean(response.get().getId(), from, to, response.get().getConversionMultiple(),
                 quantity, quantity.multiply(response.get().getConversionMultiple()), response.get().getPort());

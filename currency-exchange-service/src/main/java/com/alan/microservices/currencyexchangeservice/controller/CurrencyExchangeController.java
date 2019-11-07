@@ -4,6 +4,7 @@ package com.alan.microservices.currencyexchangeservice.controller;
 import com.alan.microservices.currencyexchangeservice.BO.ExchangeValueBO;
 import com.alan.microservices.currencyexchangeservice.entity.ExchangeValue;
 import com.alan.microservices.currencyexchangeservice.exceptions.CurrencyExchangeNotFoundException;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +15,7 @@ import java.util.Optional;
 
 
 @RestController
+@Slf4j
 public class CurrencyExchangeController {
 
     @Autowired
@@ -28,11 +30,16 @@ public class CurrencyExchangeController {
 
         Optional<ExchangeValue> exchangeValue = exchangeValueBO.findByFromAndTo(from, to);
 
+        if(exchangeValue == null){
+            throw new RuntimeException("error getting exchange");
+        }
+
         if(!exchangeValue.isPresent()){
             throw new CurrencyExchangeNotFoundException("There's no exchange for this values");
         }
-
         exchangeValue.get().setPort(Integer.parseInt(environment.getProperty("local.server.port")));
+
+        log.info("response from retrieveExchangeValue() = {}", exchangeValue);
         return exchangeValue.get();
 
     }
